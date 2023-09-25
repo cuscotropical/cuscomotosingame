@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-principal{
+    background-color: silver;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(37, 37, 47);
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+ul li{
+    padding: 16px;
+}
+
+ul li a{
+    font-style: italic;
+    font-weight: bold;
+    color: silver;
+}
+
+h1{
+    color: silver;
+    font-size: 36px;
+    font-style: italic;
+    padding: 16px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+}
+
+.sobre-a-loja{
+    padding: 0 36px;
+    padding-right: 0;
+}
+
+main p{
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 24px;
+}
+
+h2{
+    padding:  0;
+    font-style: italic;
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+section{
+    display:grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+section img{
+    padding-top: 36px;
+    max-width: 250px;
+    width: 100%;
+}
+
+section p{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+button{
+    max-width: 250px;
+    width: 100%;
+    background-color: blue;
+    color: silver;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.direitos-reservados{
+    padding: 24px 24px;
+    margin-top: 24px;
+    background-color: rgb(37, 37, 47);
+    color: silver;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container-principal{
+        align-items: center;
+        display: block;
+        max-width: 95%;
+    }
+
+    header{
+        background-color: blue;
+        display: block;
+        list-style: none;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    main{
+        max-width: 100%;
+        display: block;
+        padding: 24px 0;
+    }
+
+    main h2{
+        padding: 16px;
+        font-style: italic;
+        color: blue;
+        border-bottom: 1px solid blue;
+        margin-right: 48px;
+    }
+
+    main img{
+        padding-left: 16px;
+        max-width: 95%;
+        display: block;    
+    }
+
+    main p{
+        margin-right: 24px;
+    }
+
+    section{
+        display:block;
+    }    
+        
+    section img{
+        padding-top: 36px;
+        padding-left: 16px;
+        max-width: 95%;
+    }
+
+    h3{
+        margin: 16px;
+    }
+
+    section p{
+        margin: 16px;
+        padding-top: 8px;
+    }
+
+    button{ 
+        margin:8px 60px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container-principal{
+        align-items: center;
+        display: block;
+        max-width: 95%;
+    }
+
+    header{
+        background-color: blue;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    main{
+        max-width: 100%;
+        display: block;
+        padding: 24px 0;
+    }
+
+        main img{
+        padding-left: 50px;
+        max-width: 90%;
+        width: 100%;
+        display: block;    
+    }
+
+    main h2{
+        padding: 16px;
+        font-style: italic;
+        color: blue;
+        border-bottom: 1px solid blue;
+    }
+
+    main p{
+        margin-right: 50px;
+    }
+
+    .tablet{
+        width: 100%;
+        display:inline-block;
+        justify-content: space-between;
+    } 
+
+    section{
+        display: flex;
+        grid-template-columns: repeat(2, 100%);
+    }
+        
+    } 
+    
+    section img{
+        max-width: 100%;
+        width: 100%;
+    }    
+    
+    h3{
+        margin: 16px;
+    }
+
+    section p{
+        margin: 2px;
+        padding-top: 8px;
+    }
+
+    button{ 
+        margin:2px 60px;
+    }
